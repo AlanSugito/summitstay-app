@@ -1,0 +1,185 @@
+:root {
+	--text-sm: 12px;
+	--text-md: 24px;
+	--text-lg: 36px;
+}
+
+html {
+	overflow-x: hidden !important;
+}
+
+li,
+span,
+a {
+	font-family: "Quicksand" !important;
+}
+
+label {
+	font-family: "Poppins" !important;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.dropdown-item:active {
+	background-color: var(--bs-secondary) !important;
+}
+
+.card-img {
+	width: 400px;
+	height: 300px;
+}
+
+.text-thick {
+	font-family: "Quicksand";
+}
+
+.border-secondary {
+	border-color: #817d7d !important;
+}
+
+.text-btn {
+	color: white;
+	font-family: "Poppins";
+	font-weight: 500;
+}
+
+.slide-btn {
+	background-color: #61616138;
+}
+
+.text-sm {
+	font-size: var(--text-sm) !important;
+}
+
+.text-mid {
+	font-size: 16px;
+}
+
+.text-md {
+	font-size: var(--text-md) !important;
+}
+
+.text-lg {
+	font-size: var(--text-lg) !important;
+}
+
+.search-bar {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-bar > input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.images-container {
+	height: 400px;
+}
+
+.main-img {
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+	border-radius: 15px;
+}
+
+.sub-img {
+	width: 275px;
+	height: 195px;
+	transition: 0.3s;
+	border-radius: 15px;
+}
+
+.main-img:hover,
+.sub-img:hover {
+	opacity: 0.5;
+}
+
+.checkout-card {
+	position: sticky;
+	top: 10rem;
+}
+
+.date-input {
+	border: none;
+	outline: none;
+	appearance: none;
+}
+
+.fade-slide {
+	animation: 1s forwards fadeslide;
+}
+
+.fade {
+	animation: 1s forwards fade;
+}
+
+.delay-1s {
+	animation-delay: 1s;
+}
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.img-profile-input {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5.5rem;
+	right: -1rem;
+	padding: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.img-profile-input > input {
+	width: 100%;
+	opacity: 1;
+	position: absolute;
+	height: 250%;
+	cursor: pointer;
+}
+
+.topbar-picture {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeslide {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
